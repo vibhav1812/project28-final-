@@ -28,4 +28,8 @@ fly(){
     this.sling.bodyA = null;
 }
 
+attach(body1){
+this.sling.bodyA = body1;
+}
+
 }

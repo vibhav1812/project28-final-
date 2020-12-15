@@ -73,3 +73,12 @@ if(distance<= mango.r+stone.r){
 Body.setStatic(mango.body,false);
 }
 }
+
+function keyPressed(){
+  if(keyCode === 32){
+    slingShot.attach(stone.body);
+    Body.setPosition(stone.body,{x:170,y:520});
+    Body.setAngle(stone.body,0)
+    Body.setVelocity(stone.body,{x:0,y:0})
+  }
+}
